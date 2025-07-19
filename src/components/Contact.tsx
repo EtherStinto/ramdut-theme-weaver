@@ -33,7 +33,7 @@ export function Contact() {
     const message = encodeURIComponent(
       `Olá! Gostaria de saber mais sobre os serviços da Ramdut.`
     );
-    window.open(`https://wa.me/5552980228329?text=${message}`, '_blank');
+    window.open(`https://wa.me/5551980228329?text=${message}`, '_blank');
   };
 
   const contactInfo = [
@@ -46,7 +46,7 @@ export function Contact() {
     {
       icon: Phone,
       title: 'WhatsApp',
-      content: '+55 52 98022-8329',
+      content: '+55 51 98022-8329',
       action: handleWhatsApp,
     },
     {

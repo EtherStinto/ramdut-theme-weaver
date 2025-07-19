@@ -83,7 +83,7 @@ export function Footer() {
               GitHub
             </button>
             <button 
-              onClick={() => window.open('https://wa.me/5552980228329', '_blank')}
+              onClick={() => window.open('https://wa.me/5551980228329', '_blank')}
               className="text-foreground/70 hover:text-green-600 transition-colors duration-200"
             >
               WhatsApp

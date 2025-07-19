@@ -77,21 +77,22 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="flex items-center space-x-8">
+            <div className="flex items-center space-x-6">
               {navItems.map((item) => (
                 <button
                   key={item.key}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-foreground/80 hover:text-primary transition-colors duration-200 font-medium"
+                  className="text-foreground/80 hover:text-primary transition-all duration-300 font-medium relative group px-2 py-1"
                 >
                   {t(item.key)}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary group-hover:w-full transition-all duration-300"></span>
                 </button>
               ))}
             </div>
           </div>
 
           {/* Theme and Language Controls */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-3">
             {/* Theme Selector */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Play } from 'lucide-react';
+import { ArrowRight, ExternalLink } from 'lucide-react';
 import { useLanguage } from './LanguageProvider';
 import heroImage from '@/assets/hero-bg.jpg';
 
@@ -35,41 +35,41 @@ export function Hero() {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Main Heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-slide-in-from-bottom">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               {t('hero.title')}
             </span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg sm:text-xl md:text-2xl text-foreground/80 mb-8 max-w-3xl mx-auto leading-relaxed animate-slide-up">
+          <p className="text-lg sm:text-xl md:text-2xl text-foreground/80 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in opacity-0 [animation-delay:0.2s] [animation-fill-mode:forwards]">
             {t('hero.subtitle')}
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-scale-fade-in opacity-0 [animation-delay:0.4s] [animation-fill-mode:forwards]">
             <Button
               onClick={() => scrollToSection('#contact')}
               size="lg"
-              className="group bg-gradient-primary hover:shadow-primary transition-all duration-300 transform hover:scale-105"
+              className="group bg-gradient-primary hover:shadow-primary transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
             >
               {t('hero.cta')}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             
             <Button
-              onClick={() => scrollToSection('#features')}
+              onClick={() => window.open('https://ramdut.lojavirtualnuvem.com.br/admin/v2/products', '_blank')}
               variant="outline"
               size="lg"
-              className="group border-primary/20 hover:border-primary/40 hover:bg-primary/5 transition-all duration-300"
+              className="group border-primary/20 hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 hover:scale-105"
             >
-              <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-              {t('hero.demo')}
+              {t('nav.shop')}
+              <ExternalLink className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
 
           {/* Stats or Indicators */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto animate-fade-in opacity-0 [animation-delay:0.6s] [animation-fill-mode:forwards]">
             <div className="text-center">
               <div className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">10k+</div>
               <div className="text-sm text-foreground/60">Clientes Ativos</div>
