@@ -22,7 +22,7 @@ export function WhatsAppButton() {
     const message = encodeURIComponent(
       'Olá! Vim do site da Ramdut e gostaria de saber mais sobre os serviços.'
     );
-    window.open(`https://wa.me/5552980228329?text=${message}`, '_blank');
+    window.open(`https://wa.me/5551980228329?text=${message}`, '_blank');
     setShowTooltip(false);
   };
 
