@@ -40,18 +40,21 @@ export function Header() {
   }, []);
 
   const navItems = [
-    { key: 'nav.home', href: '#home' },
-    { key: 'nav.features', href: '#features' },
-    { key: 'nav.about', href: '#about' },
-    { key: 'nav.pricing', href: '#pricing' },
-    { key: 'nav.testimonials', href: '#testimonials' },
+    { key: 'nav.home', href: '/', isRoute: true },
+    { key: 'nav.services', href: '/services', isRoute: true },
+    { key: 'nav.about', href: '/about', isRoute: true },
+    { key: 'nav.blog', href: '/blog', isRoute: true },
     { key: 'nav.contact', href: '#contact' },
   ];
 
-  const scrollToSection = (id: string) => {
-    const element = document.querySelector(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+  const handleNavigation = (href: string, isRoute?: boolean) => {
+    if (isRoute) {
+      window.location.href = href;
+    } else {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
     setIsMenuOpen(false);
   };
@@ -81,7 +84,7 @@ export function Header() {
               {navItems.map((item) => (
                 <button
                   key={item.key}
-                  onClick={() => scrollToSection(item.href)}
+                  onClick={() => handleNavigation(item.href, item.isRoute)}
                   className="text-foreground/80 hover:text-primary transition-all duration-300 font-medium relative group px-2 py-1"
                 >
                   {t(item.key)}
@@ -168,7 +171,7 @@ export function Header() {
               {navItems.map((item) => (
                 <button
                   key={item.key}
-                  onClick={() => scrollToSection(item.href)}
+                  onClick={() => handleNavigation(item.href, item.isRoute)}
                   className="block w-full text-left px-3 py-2 text-foreground/80 hover:text-primary hover:bg-muted/50 rounded-md transition-colors duration-200"
                 >
                   {t(item.key)}
