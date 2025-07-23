@@ -9,7 +9,7 @@ const testimonials = [
     content: 'A Ramdut transformou completamente nossa operação. Em 6 meses, aumentamos nossa eficiência em 300%.',
     rating: 5,
     flag: '🇧🇷',
-    avatar: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=150&h=150&fit=crop&crop=face',
+    avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face',
   },
   {
     name: 'John Smith',
@@ -17,7 +17,7 @@ const testimonials = [
     content: 'Incredible automation capabilities. Ramdut helped us scale our operations without increasing our team size.',
     rating: 5,
     flag: '🇺🇸',
-    avatar: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=150&h=150&fit=crop&crop=face',
+    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
   },
   {
     name: 'Carlos Rodriguez',
@@ -25,7 +25,7 @@ const testimonials = [
     content: 'La plataforma más intuitiva que hemos usado. El soporte técnico es excepcional y siempre disponible.',
     rating: 5,
     flag: '🇪🇸',
-    avatar: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=150&h=150&fit=crop&crop=face',
+    avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face',
   },
   {
     name: '김민준',
@@ -33,7 +33,7 @@ const testimonials = [
     content: '놀라운 자동화 기능으로 우리 팀의 생산성이 크게 향상되었습니다. 한국 시장에 완벽하게 맞습니다.',
     rating: 5,
     flag: '🇰🇷',
-    avatar: 'https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=150&h=150&fit=crop&crop=face',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
   },
   {
     name: '张伟',
@@ -41,7 +41,7 @@ const testimonials = [
     content: '优秀的SaaS平台，帮助我们实现了数字化转型。客户服务团队非常专业。',
     rating: 5,
     flag: '🇨🇳',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
+    avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop&crop=face',
   },
   {
     name: 'Ana Martins',
@@ -49,7 +49,7 @@ const testimonials = [
     content: 'Interface intuitiva e recursos avançados. A Ramdut nos ajudou a economizar milhares de horas mensais.',
     rating: 5,
     flag: '🇧🇷',
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face',
   },
 ];
 

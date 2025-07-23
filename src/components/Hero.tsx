@@ -72,15 +72,15 @@ export function Hero() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto animate-fade-in opacity-0 [animation-delay:0.6s] [animation-fill-mode:forwards]">
             <div className="text-center">
               <div className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">10k+</div>
-              <div className="text-sm text-foreground/60">Clientes Ativos</div>
+              <div className="text-sm text-black dark:text-white">Clientes Ativos</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">99.9%</div>
-              <div className="text-sm text-foreground/60">Uptime</div>
+              <div className="text-sm text-black dark:text-white">Uptime</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">24/7</div>
-              <div className="text-sm text-foreground/60">Suporte</div>
+              <div className="text-sm text-black dark:text-white">Suporte</div>
             </div>
           </div>
         </div>
