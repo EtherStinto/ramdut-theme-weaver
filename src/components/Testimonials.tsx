@@ -9,7 +9,7 @@ const testimonials = [
     content: 'A Ramdut transformou completamente nossa operação. Em 6 meses, aumentamos nossa eficiência em 300%.',
     rating: 5,
     flag: '🇧🇷',
-    avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b17c?w=150&h=150&fit=crop&crop=face',
+    avatar: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=150&h=150&fit=crop&crop=face',
   },
   {
     name: 'John Smith',
@@ -17,7 +17,7 @@ const testimonials = [
     content: 'Incredible automation capabilities. Ramdut helped us scale our operations without increasing our team size.',
     rating: 5,
     flag: '🇺🇸',
-    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
+    avatar: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=150&h=150&fit=crop&crop=face',
   },
   {
     name: 'Carlos Rodriguez',
@@ -25,7 +25,7 @@ const testimonials = [
     content: 'La plataforma más intuitiva que hemos usado. El soporte técnico es excepcional y siempre disponible.',
     rating: 5,
     flag: '🇪🇸',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face',
+    avatar: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=150&h=150&fit=crop&crop=face',
   },
   {
     name: '김민준',
@@ -33,7 +33,7 @@ const testimonials = [
     content: '놀라운 자동화 기능으로 우리 팀의 생산성이 크게 향상되었습니다. 한국 시장에 완벽하게 맞습니다.',
     rating: 5,
     flag: '🇰🇷',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
+    avatar: 'https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=150&h=150&fit=crop&crop=face',
   },
   {
     name: '张伟',
@@ -41,7 +41,7 @@ const testimonials = [
     content: '优秀的SaaS平台，帮助我们实现了数字化转型。客户服务团队非常专业。',
     rating: 5,
     flag: '🇨🇳',
-    avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop&crop=face',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
   },
   {
     name: 'Ana Martins',
@@ -92,17 +92,19 @@ export function Testimonials() {
 
                 {/* Author */}
                 <div className="flex items-center gap-4">
-                  <img
-                    src={testimonial.avatar}
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover ring-2 ring-primary/20"
-                  />
-                  <div>
-                    <div className="flex items-center gap-2">
-                      <h4 className="font-semibold text-foreground">{testimonial.name}</h4>
-                      <span className="text-lg">{testimonial.flag}</span>
+                  <div className="relative">
+                    <img
+                      src={testimonial.avatar}
+                      alt={testimonial.name}
+                      className="w-16 h-16 rounded-lg object-cover ring-4 ring-primary/30 shadow-lg transform rotate-3 hover:rotate-0 transition-transform duration-300"
+                    />
+                    <div className="absolute -top-2 -right-2 w-6 h-6 bg-gradient-primary rounded-full flex items-center justify-center">
+                      <span className="text-xs">{testimonial.flag}</span>
                     </div>
-                    <p className="text-sm text-foreground/60">{testimonial.role}</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground text-lg">{testimonial.name}</h4>
+                    <p className="text-sm text-foreground/60 font-medium">{testimonial.role}</p>
                   </div>
                 </div>
               </CardContent>

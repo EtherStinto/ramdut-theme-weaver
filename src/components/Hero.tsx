@@ -31,9 +31,29 @@ export function Hero() {
         <div className="absolute top-1/2 left-1/2 w-48 h-48 bg-primary/8 rounded-full blur-2xl animate-pulse-slow" />
       </div>
 
+      {/* Scattered Text Elements - Cluttered Design */}
+      <div className="absolute top-10 left-4 z-20 text-xs text-primary/60 rotate-12 animate-pulse">
+        💡 Inovação
+      </div>
+      <div className="absolute top-20 right-8 z-20 text-sm text-accent/70 -rotate-6 animate-bounce">
+        🚀 Tecnologia
+      </div>
+      <div className="absolute bottom-40 left-8 z-20 text-xs text-secondary/60 rotate-45 animate-pulse">
+        ⭐ Qualidade
+      </div>
+      <div className="absolute top-1/3 right-16 z-20 text-xs text-primary/50 -rotate-12 animate-fade-in">
+        🎯 Precisão
+      </div>
+
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
+          
+          {/* Scattered Subtitle - Top Right */}
+          <div className="absolute -top-20 right-0 z-30 text-sm text-foreground/60 transform rotate-6 bg-background/80 backdrop-blur p-2 rounded-lg animate-float">
+            Transforme seu negócio
+          </div>
+          
           {/* Main Heading */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-slide-in-from-bottom">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
@@ -41,7 +61,17 @@ export function Hero() {
             </span>
           </h1>
 
-          {/* Subtitle */}
+          {/* Scattered Text - Left Side */}
+          <div className="absolute top-40 -left-20 z-30 text-lg text-foreground/70 transform -rotate-12 bg-card/80 backdrop-blur p-3 rounded-lg animate-pulse-slow">
+            com nossas soluções
+          </div>
+
+          {/* Scattered Promotional Text */}
+          <div className="absolute bottom-20 right-10 z-30 text-xs text-accent/60 transform rotate-12 bg-accent/10 backdrop-blur p-2 rounded-full animate-bounce">
+            💎 Premium
+          </div>
+          
+          {/* Main Subtitle - Repositioned */}
           <p className="text-lg sm:text-xl md:text-2xl text-foreground/80 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in opacity-0 [animation-delay:0.2s] [animation-fill-mode:forwards]">
             {t('hero.subtitle')}
           </p>
@@ -66,6 +96,11 @@ export function Hero() {
               {t('nav.shop')}
               <ExternalLink className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
+          </div>
+          
+          {/* More Scattered Elements */}
+          <div className="absolute top-60 left-20 z-30 text-sm text-primary/50 transform -rotate-6 bg-primary/5 backdrop-blur p-2 rounded-lg animate-pulse">
+            🌟 Exclusivo
           </div>
 
           {/* Stats or Indicators */}
