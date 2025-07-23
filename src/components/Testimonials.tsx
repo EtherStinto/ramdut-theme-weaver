@@ -96,15 +96,15 @@ export function Testimonials() {
                     <img
                       src={testimonial.avatar}
                       alt={testimonial.name}
-                      className="w-16 h-16 rounded-lg object-cover ring-4 ring-primary/30 shadow-lg transform rotate-3 hover:rotate-0 transition-transform duration-300"
+                      className="w-14 h-14 rounded-full object-cover border-2 border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110"
                     />
-                    <div className="absolute -top-2 -right-2 w-6 h-6 bg-gradient-primary rounded-full flex items-center justify-center">
+                    <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-primary rounded-full flex items-center justify-center shadow-sm">
                       <span className="text-xs">{testimonial.flag}</span>
                     </div>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground text-lg">{testimonial.name}</h4>
-                    <p className="text-sm text-foreground/60 font-medium">{testimonial.role}</p>
+                    <h4 className="font-semibold text-foreground">{testimonial.name}</h4>
+                    <p className="text-sm text-foreground/60">{testimonial.role}</p>
                   </div>
                 </div>
               </CardContent>
