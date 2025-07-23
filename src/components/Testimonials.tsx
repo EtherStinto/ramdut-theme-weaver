@@ -4,52 +4,52 @@ import { Star, Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Maria Silva',
-    role: 'CEO, TechBrasil',
+    name: 'TechBrasil Corp',
+    role: 'Empresa de Tecnologia',
     content: 'A Ramdut transformou completamente nossa operação. Em 6 meses, aumentamos nossa eficiência em 300%.',
     rating: 5,
     flag: '🇧🇷',
-    avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face',
+    icon: '💼',
   },
   {
-    name: 'John Smith',
-    role: 'CTO, GlobalTech',
+    name: 'GlobalTech Solutions',
+    role: 'Consultoria Internacional',
     content: 'Incredible automation capabilities. Ramdut helped us scale our operations without increasing our team size.',
     rating: 5,
     flag: '🇺🇸',
-    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
+    icon: '🌐',
   },
   {
-    name: 'Carlos Rodriguez',
-    role: 'Director, InnovaSpain',
+    name: 'InnovaSpain',
+    role: 'Startup Inovadora',
     content: 'La plataforma más intuitiva que hemos usado. El soporte técnico es excepcional y siempre disponible.',
     rating: 5,
     flag: '🇪🇸',
-    avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face',
+    icon: '🚀',
   },
   {
-    name: '김민준',
-    role: 'Lead Developer, SeoulTech',
+    name: 'SeoulTech',
+    role: 'Desenvolvimento de Software',
     content: '놀라운 자동화 기능으로 우리 팀의 생산성이 크게 향상되었습니다. 한국 시장에 완벽하게 맞습니다.',
     rating: 5,
     flag: '🇰🇷',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
+    icon: '⚡',
   },
   {
-    name: '张伟',
-    role: '技术总监, 北京创新',
+    name: '北京创新科技',
+    role: 'Empresa de Inovação',
     content: '优秀的SaaS平台，帮助我们实现了数字化转型。客户服务团队非常专业。',
     rating: 5,
     flag: '🇨🇳',
-    avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop&crop=face',
+    icon: '🎯',
   },
   {
-    name: 'Ana Martins',
-    role: 'Diretora de TI, PortoTech',
+    name: 'PortoTech',
+    role: 'Consultoria em TI',
     content: 'Interface intuitiva e recursos avançados. A Ramdut nos ajudou a economizar milhares de horas mensais.',
     rating: 5,
     flag: '🇧🇷',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face',
+    icon: '💎',
   },
 ];
 
@@ -90,14 +90,12 @@ export function Testimonials() {
                   "{testimonial.content}"
                 </p>
 
-                {/* Author */}
+                {/* Company Info */}
                 <div className="flex items-center gap-4">
                   <div className="relative">
-                    <img
-                      src={testimonial.avatar}
-                      alt={testimonial.name}
-                      className="w-14 h-14 rounded-full object-cover border-2 border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110"
-                    />
+                    <div className="w-14 h-14 bg-gradient-primary rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
+                      <span className="text-2xl">{testimonial.icon}</span>
+                    </div>
                     <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-primary rounded-full flex items-center justify-center shadow-sm">
                       <span className="text-xs">{testimonial.flag}</span>
                     </div>
